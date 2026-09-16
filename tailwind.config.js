@@ -1,0 +1,96 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+        display: ['Sora', 'system-ui', 'sans-serif'],
+      },
+      colors: {
+        navy: {
+          50: '#f0f4fa',
+          100: '#dae5f3',
+          200: '#b8cfeb',
+          300: '#8aafdd',
+          400: '#5a87c9',
+          500: '#3a6ab4',
+          600: '#2b5294',
+          700: '#244278',
+          800: '#1e3660',
+          900: '#152545',
+          950: '#0d1830',
+        },
+        royal: {
+          50: '#eef5ff',
+          100: '#dae9ff',
+          200: '#bdd7ff',
+          300: '#90bcff',
+          400: '#5b96ff',
+          500: '#3573ff',
+          600: '#1d54f5',
+          700: '#163fe1',
+          800: '#1834b6',
+          900: '#1a3290',
+          950: '#15205a',
+        },
+        slate: {
+          25: '#f8fafc',
+          50: '#f1f5f9',
+          100: '#e2e8f0',
+          200: '#cbd5e1',
+          300: '#94a3b8',
+          400: '#64748b',
+          500: '#475569',
+          600: '#334155',
+          700: '#1e293b',
+          800: '#0f172a',
+          900: '#0b1120',
+          950: '#020617',
+        },
+        gold: {
+          50: '#fffbeb',
+          100: '#fff3c4',
+          200: '#ffe585',
+          300: '#ffd24d',
+          400: '#ffbb20',
+          500: '#f59e0b',
+          600: '#d97706',
+          700: '#b45309',
+          800: '#92400e',
+          900: '#78350f',
+        },
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.4s ease-out',
+        'fade-in-up': 'fadeInUp 0.5s ease-out',
+        'scale-in': 'scaleIn 0.3s ease-out',
+        'slide-down': 'slideDown 0.3s ease-out',
+        'shimmer': 'shimmer 2s linear infinite',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        fadeInUp: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        scaleIn: {
+          '0%': { opacity: '0', transform: 'scale(0.95)' },
+          '100%': { opacity: '1', transform: 'scale(1)' },
+        },
+        slideDown: {
+          '0%': { opacity: '0', transform: 'translateY(-10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        shimmer: {
+          '0%': { backgroundPosition: '-1000px 0' },
+          '100%': { backgroundPosition: '1000px 0' },
+        },
+      },
+    },
+  },
+  plugins: [],
+};
